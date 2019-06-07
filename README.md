@@ -34,7 +34,7 @@ $ python Fasta_to_GenomeFile.py YourGenome.fasta
 
 ### Download the folder Haplotype_Test and the script Haplotypes_script.R
 ### Change the work directory in the R script to link to Haplotype_Test folder.
-### Run the whole script in R to obtain the Figure S3.
+### Run the whole script in R to obtain the Figure S3, the matrix of haplotype frequencies "Haplo_sorted". Matrix of haplotypes ("Haplo" matrix) is available in you run the first 94 lines of the script.
 
 ## References
 
