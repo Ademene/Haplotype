@@ -6,10 +6,13 @@ This text describe the method for the « Identification of the different haplot
 
 $ bcftools view -e 'HOM=1' input.vcf.gz -o input_WithoutSingletons.vcf
 
-## 2) Extract the SNPs number between each couple of individuals considered along sliding windows of the desired size using vcftools. Example for three individuals ind1, ind2 and ind3 ; for a window size of 10kb. Note : For n individuals, number of files produced is (n-1)! . I did not automated this step.
+## 2) Extract the SNPs number between each couple of individuals considered along sliding windows of the desired size using vcftools. Example for three individuals ind1, ind2 and ind3 ; for a window size of 10kb. Note : For n individuals, number of files produced is (n-1)! . 
+### I did not automated this step.
 
 $ vcftools --vcf input_WithoutSingletons.vcf --indv ind1 --indv ind2 --window-pi 10000 --out ind1_ind2
+
 $ vcftools --vcf input_WithoutSingletons.vcf --indv ind1 --indv ind3 --window-pi 10000 --out ind1_ind3
+
 $ vcftools --vcf input_WithoutSingletons.vcf --indv ind2 --indv ind3 --window-pi 10000 --out ind2_ind3
 
 ## 3) Create a genome file as follow: 
