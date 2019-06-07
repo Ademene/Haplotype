@@ -6,7 +6,8 @@ This text describe the method for the « Identification of the different haplot
 
 $ bcftools view -e 'HOM=1' input.vcf.gz -o input_WithoutSingletons.vcf
 
-## 2) Extract the SNPs number between each couple of individuals considered along sliding windows of the desired size using vcftools. Example for three individuals ind1, ind2 and ind3 ; for a window size of 10kb. Note : For n individuals, number of files produced is (n-1)! . 
+## 2) Extract the SNPs number between each couple of individuals considered along sliding windows of the desired size using vcftools. 
+### Example for three individuals ind1, ind2 and ind3 ; for a window size of 10kb. Note : For n individuals, number of files produced is (n-1)! . 
 ### I did not automated this step.
 
 $ vcftools --vcf input_WithoutSingletons.vcf --indv ind1 --indv ind2 --window-pi 10000 --out ind1_ind2
@@ -22,10 +23,9 @@ $ vcftools --vcf input_WithoutSingletons.vcf --indv ind2 --indv ind3 --window-pi
 #### MS1-2 554633
 
 ### Here is an example of python script wich works for a single line multifasta file:
-### If you need to unwrap your multiple lines fasta file you can use: 
+### You first need to unwrap multi-lines fasta: 
 $ awk '/^>/ {printf("\n%s\n",$0);next; } { printf("%s",$0);}  END {printf("\n");}' < YourGenome.fasta
 ### Python script (extension of your fasta file must be .fasta):
-
 $ python Fasta_to_GenomeFile.py YourGenome.fasta
 
 ### The file lengthCOntigPacbio.genome located in the folder Haplotype_Test is the genome file I used.
