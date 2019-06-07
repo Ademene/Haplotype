@@ -2,7 +2,7 @@
 
 This text describe the method for the « Identification of the different haplotypes among the French clonal lineages » mentionned in the article "Whole-genome sequencing reveals recent and frequent genetic recombination between clonal lineages of Cryphonectria parasitica in western Europe" Demené et al., 2019 (https://doi.org/10.1016/j.fgb.2019.06.002). This method is not automated. 
 
-## 1) Remoove singletons from the initial vcf using bcftools.
+## 1) Remove singletons from the initial vcf using bcftools.
 
 $ bcftools view -e 'HOM=1' input.vcf.gz -o input_WithoutSingletons.vcf
 
