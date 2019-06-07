@@ -14,9 +14,9 @@ $ vcftools --vcf input_WithoutSingletons.vcf --indv ind2 --indv ind3 --window-pi
 
 ## 3) Create a genome file as follow: 
 
-### Contig Length
-### MS1-1 3855066
-### MS1-2 554633
+#### Contig Length
+#### MS1-1 3855066
+#### MS1-2 554633
 
 ### Here is an example of python script wich works for a single line multifasta file:
 ### If you need to unwrap your multiple lines fasta file you can use: 
