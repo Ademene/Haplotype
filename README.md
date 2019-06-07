@@ -20,7 +20,7 @@ $ vcftools --vcf input_WithoutSingletons.vcf --indv ind2 --indv ind3 --window-pi
 
 ### Here is an example of python script wich works for a single line multifasta file:
 ### If you need to unwrap your multiple lines fasta file you can use: 
-$ awk '/^>/ {printf("\n%s\n",$0);next; } { printf("%s",$0);}  END {printf("\n");}' < file.fa
+$ awk '/^>/ {printf("\n%s\n",$0);next; } { printf("%s",$0);}  END {printf("\n");}' < YourGenome.fasta
 ### Python script (extension of your fasta file must be .fasta):
 
 $ python Fasta_to_GenomeFile.py YourGenome.fasta
