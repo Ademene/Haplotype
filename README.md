@@ -30,7 +30,7 @@ $ python Fasta_to_GenomeFile.py YourGenome.fasta
 
 ### The file lengthCOntigPacbio.genome located in the folder Haplotype_Test is the genome file I used.
 
-## 4) Run R script to make the plot. Here, I provide the script designed to plot the haplotype figure S3 (10 individuals, 45 files). This script should be adapted manualy for use with other data sets.
+## 4) Run R{3} script to make the plot. Here, I provide the script designed to plot the haplotype figure S3 (10 individuals, 45 files). This script should be adapted manualy for use with other data sets.
 
 ### Download the folder Haplotype_Test and the script Haplotypes_script.R
 ### Change the work directory in the R script to link to Haplotype_Test folder.
@@ -43,3 +43,5 @@ Li H., Handsaker B., Wysoker A., Fennell T., Ruan J., Homer N., Marth G., Abecas
 
 {2} https://github.com/vcftools/vcftools
 The Variant Call Format and VCFtools, Petr Danecek, Adam Auton, Goncalo Abecasis, Cornelis A. Albers, Eric Banks, Mark A. DePristo, Robert Handsaker, Gerton Lunter, Gabor Marth, Stephen T. Sherry, Gilean McVean, Richard Durbin and 1000 Genomes Project Analysis Group, Bioinformatics, 2011
+
+{3} R Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.   URL http://www.R-project.org/.
