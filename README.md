@@ -28,6 +28,8 @@ $ awk '/^>/ {printf("\n%s\n",$0);next; } { printf("%s",$0);}  END {printf("\n");
 
 $ python Fasta_to_GenomeFile.py YourGenome.fasta
 
+### The file lengthCOntigPacbio.genome located in the folder Haplotype_Test is the genome file I used.
+
 ## 4) Run R script to make the plot. Here, I provide the script designed to plot the haplotype figure S3 (10 individuals, 45 files). This script should be adapted manualy to use other data sets.
 
 ### Download the folder Haplotype_Test and the script Haplotypes_script.R
