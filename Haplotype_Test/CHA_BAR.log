@@ -1,0 +1,15 @@
+
+VCFtools - UNKNOWN
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf ../../46Samples_WithoutSingletons.vcf
+	--keep CHA_BAR
+	--out ../../Haplotypes/Sans_Singletons/CHA_BAR
+	--window-pi 10000
+
+Keeping individuals in 'keep' list
+After filtering, kept 2 out of 46 Individuals
+Outputting Windowed Nucleotide Diversity Statistics...
+After filtering, kept 23240 out of a possible 23240 Sites
+Run Time = 1.00 seconds
